@@ -22,7 +22,7 @@ Finding an open table at popular restaurants can be a guessing game. This applic
 |-------|-----------|---------|
 | Frontend | React.js | 18.x |
 | Backend | Node.js + Express | 20.x LTS |
-| Database | PostgreSQL | 15.x |
+| Database | PostgreSQL via Neon | 15.x |
 | Hosting | Render | — |
 
 ## Getting Started
@@ -41,3 +41,9 @@ Finding an open table at popular restaurants can be a guessing game. This applic
 |------|--------|--------|
 | Week 1 | Sprint 0 — Setup & Vision | ✅ Complete |
 | Week 2 | Sprint 1 — Requirements | 🔄 In Progress |
+
+## Developer Notes: Database Seeding
+The database schema and placeholder configurations are maintained under the `/database` directory. 
+
+* To build the table structure, execute the scripts inside `database/schema.sql` within your SQL editor.
+* To populate the application map with initial live tracking metrics for testing, run the mock data transactions inside `database/seed.sql`.
